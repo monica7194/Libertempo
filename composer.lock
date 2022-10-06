@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a42ef295249c8e43858ebda412c42707",
+    "content-hash": "3b9a7ea7d02503cbed8abd763fc9b03b",
     "packages": [
         {
             "name": "adldap2/adldap2",
@@ -88,6 +88,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -649,12 +650,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -704,12 +705,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -837,7 +838,7 @@
             "time": "2017-04-10T19:12:45+00:00"
         },
         {
-            "name": "jeremeamia/SuperClosure",
+            "name": "jeremeamia/superclosure",
             "version": "2.4.0",
             "source": {
                 "type": "git",
@@ -892,6 +893,7 @@
                 "serialize",
                 "tokenizer"
             ],
+            "abandoned": "opis/closure",
             "time": "2018-03-21T22:21:57+00:00"
         },
         {
@@ -1045,12 +1047,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "FastRoute\\": "src/"
-                },
                 "files": [
                     "src/functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1251,12 +1253,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "DI\\": "src/"
-                },
                 "files": [
                     "src/functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "DI\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1897,12 +1899,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1954,12 +1956,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php56\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php56\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2108,16 +2110,16 @@
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.2.6",
+            "version": "6.2.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "a2e8f5b505a7a14a4ed960313c4baf699fd1f4bb"
+                "reference": "ac6e92fccc7d9383dfd787056831349621b1aca2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/a2e8f5b505a7a14a4ed960313c4baf699fd1f4bb",
-                "reference": "a2e8f5b505a7a14a4ed960313c4baf699fd1f4bb",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/ac6e92fccc7d9383dfd787056831349621b1aca2",
+                "reference": "ac6e92fccc7d9383dfd787056831349621b1aca2",
                 "shasum": ""
             },
             "require": {
@@ -2126,7 +2128,6 @@
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "fonts",
                     "config",
                     "include",
                     "tcpdf.php",
@@ -2147,13 +2148,13 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPLv3"
+                "LGPL-3.0"
             ],
             "authors": [
                 {
                     "name": "Nicola Asuni",
                     "email": "info@tecnick.com",
-                    "homepage": "http://nicolaasuni.tecnick.com"
+                    "role": "lead"
                 }
             ],
             "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
@@ -2167,19 +2168,19 @@
                 "pdf417",
                 "qrcode"
             ],
-            "time": "2015-01-28T18:51:40+00:00"
+            "time": "2018-09-14T15:26:29+00:00"
         },
         {
             "name": "tightenco/collect",
             "version": "v5.5.33",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tightenco/collect.git",
+                "url": "https://github.com/tighten/collect.git",
                 "reference": "a2a3ca1c56aa18948b4e08e90f38fcdee859cc4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/a2a3ca1c56aa18948b4e08e90f38fcdee859cc4c",
+                "url": "https://api.github.com/repos/tighten/collect/zipball/a2a3ca1c56aa18948b4e08e90f38fcdee859cc4c",
                 "reference": "a2a3ca1c56aa18948b4e08e90f38fcdee859cc4c",
                 "shasum": ""
             },
@@ -2404,6 +2405,7 @@
             ],
             "description": "Sends PHP test coverage information to Codacy.",
             "homepage": "https://github.com/codacy/php-codacy-coverage",
+            "abandoned": true,
             "time": "2017-12-20T14:31:46+00:00"
         },
         {
@@ -2580,7 +2582,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🅱 Nette Bootstrap: the simple way to configure and bootstrap your Nette application.",
+            "description": "? Nette Bootstrap: the simple way to configure and bootstrap your Nette application.",
             "homepage": "https://nette.org",
             "keywords": [
                 "bootstrapping",
@@ -2645,7 +2647,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "💎 Nette Dependency Injection Container: Flexible, compiled and full-featured DIC with perfectly usable autowiring and support for all new PHP 7.1 features.",
+            "description": "? Nette Dependency Injection Container: Flexible, compiled and full-featured DIC with perfectly usable autowiring and support for all new PHP 7.1 features.",
             "homepage": "https://nette.org",
             "keywords": [
                 "compiled",
@@ -2710,7 +2712,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🔍 Nette Finder: find files and directories with an intuitive API.",
+            "description": "? Nette Finder: find files and directories with an intuitive API.",
             "homepage": "https://nette.org",
             "keywords": [
                 "filesystem",
@@ -2770,7 +2772,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🍸 Nette NEON: encodes and decodes NEON file format.",
+            "description": "? Nette NEON: encodes and decodes NEON file format.",
             "homepage": "http://ne-on.org",
             "keywords": [
                 "export",
@@ -2833,7 +2835,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🐘 Nette PHP Generator: generates neat PHP code for you. Supports new PHP 7.2 features.",
+            "description": "? Nette PHP Generator: generates neat PHP code for you. Supports new PHP 7.2 features.",
             "homepage": "https://nette.org",
             "keywords": [
                 "code",
@@ -2897,7 +2899,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🍀 Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
+            "description": "? Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
             "homepage": "https://nette.org",
             "keywords": [
                 "autoload",
@@ -2947,11 +2949,11 @@
                 }
             },
             "autoload": {
-                "classmap": [
-                    "src/"
-                ],
                 "files": [
                     "src/loader.php"
+                ],
+                "classmap": [
+                    "src/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2970,7 +2972,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🛠 Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "description": "? Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
             "homepage": "https://nette.org",
             "keywords": [
                 "array",
@@ -3088,6 +3090,20 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
+            "funding": [
+                {
+                    "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpstan",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpstan/phpstan",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2017-11-29T11:25:41+00:00"
         },
         {
@@ -3207,6 +3223,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
+            "abandoned": "symfony/error-handler",
             "time": "2018-10-31T09:06:03+00:00"
         },
         {
@@ -3319,5 +3336,6 @@
         "ext-reflection": "*",
         "ext-curl": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
